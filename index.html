@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Scientific Calculator</title>
+    <title>Calculadora Científica</title>
 </head>
 <body>
     <form name="sci-calc">
@@ -19,7 +18,7 @@
             <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)"></td>
             <td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
             <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)"></td>
+            <td><input type="button" class="btnMath" name="btnMath" value="%" onclick="percent(this.form.display)"></td>
         </tr>
         <tr>
             <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
@@ -57,5 +56,7 @@
         </tr>
         </tabel>
     </form>
+    <strong class="namae">Desarrollado por: Tulio Rangel</strong>
+    <script src="./index.js"></script>
 </body>
 </html>
